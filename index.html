@@ -6,17 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 html{
-background: linear-gradient(to bottom, #00004d,indigo) no-repeat;
-height: 100%;
+
 width: 100%;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;    
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+background: linear-gradient(to bottom, #00004d,indigo) no-repeat;
+background-size: cover;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     margin: auto;
+    padding: 0px;
 }
 
 h1{
@@ -25,8 +28,17 @@ h1{
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; 
+    font-size: 50px;
+    padding: 40px;
 }
 
+h2{
+    color: white;
+    text-align: left;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; 
+}
 #contentWrapper{
     height: 100%;
     width: 80%;
@@ -39,14 +51,19 @@ h1{
 .header{
     
 }
-.content{
+
+.text{
     background-color: white;
 border-radius: 5px;
-padding: 15px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-float: left;
+padding: 40px;
+font-size: 20px;
+}
+.content{
+    -webkit-flex: 0.7;
+    -ms-flex: 0.7;
+    flex: 0.7;
+    margin: auto;
+    padding: 20px;
 }
 
 /* Style the navigation menu */
@@ -54,8 +71,8 @@ nav {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    background: #e6e6ff;
-    padding: 20px;
+    background: black;
+    padding: 30px;
 }
 
 /* Style the list inside the menu */
@@ -71,10 +88,10 @@ li a {
     width: 50%;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 li a:hover {
-    color: indigo;
+    color: #ad8bc6;
 }
 </style>
 </head>
@@ -90,31 +107,11 @@ li a:hover {
 </header>
 <div id="contentWrapper">
 
-
 <div class="content">
-<h2> Who are you? </h2>
-<p>i'm a software developer with a passion for data processing. 
-<ul>
-    <li> based in wonderful Vienna </li>
-    <li> currently working in the field of knowledge management </li>
-    <li> loves to read, dance, cook and do sports </li>
-    <li> "fluent" in java, javascript, python and always struggeling with c</li>
-</p>
+<h2>Oh, hi!</h2>
+<p style="color: white; padding: 20px;"> we are fixing and breaking stuff here! </p>
+<div class="text">i'm a software developer with a passion for data processing and (personal) knowledge management. oh, yes, and coffee.
 </div>
-
-
-<div class="content" style="margin-left: 2%;">
-<h2> What are we doing here?</h2>
-<p>
-i've been working in development for a few years now and simply feel it's time to try to make things "on my own" :) 
-<ul>
-<li> playing around, mainly </li>
-<li> maybe tryin' to set up a little blog</li>
-<li> maybe tryin' to build a webapp </li>
-<li> practicing the basics. css. html. javascript, maybe. </li>
-<li> learning and having fun
-</ul>
-</p>
 </div>
 </div>
 </body>
